@@ -1,29 +1,35 @@
 body {
   padding: 0;
   margin: 0;
-  background: #18cb63;
+  background: #cacfd6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
   font-family: Raleway, sans-serif;
   text-align: center;
 }
 
 h1 {
-  color: #fff;
+  color: #008080;
   text-align: center;
   font-size: 3em;
 }
 
 button {
   display: inline-block;
-  font-size: 2em;
-  background: #ffa300;
-  font-weight: bold;
+  font-size: 30px;
+  background: #6a605c;
+  color: white;
+  font-weight: normal;
   border: none;
   padding: 10px 30px;
 }
 
 .score {
-  background: #fff;
-  color: #8246af;
+  background: #008080;
+  color: white;
   padding: 0 0.5em;
   line-height: 1;
   border-radius: 1rem;
@@ -47,64 +53,74 @@ button {
   height: 30vw;
   max-height: 200px;
   min-width: 100px;
-  min-height: 100px;
+  max-height: 200px;
 }
+
 .hole:after {
   display: block;
-  background-image: url("https://assets.codepen.io/707165/hole.png");
-  background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
   content: "";
   width: 100%;
-  height: 70px;
+  height: 30px;
   position: absolute;
   z-index: -1;
-  bottom: 0px;
-}
-.hole:nth-child(3n) .cupcake {
-  background-image: url("https://assets.codepen.io/707165/shecodes_cupcake.png");
-}
-.hole:nth-child(3n-1) .cupcake {
-  background-image: url("https://assets.codepen.io/5804361/Untitled+design+%2852%29.png");
+  bottom: 0;
+  background: black;
+  border-radius: 50%;
 }
 
-.cupcake {
+.animal {
   border: none;
   background-image: url("https://assets.codepen.io/5804361/Untitled+design+%2854%29.png");
   background-color: transparent;
   background-position: bottom center;
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: 70%;
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
-  transition: all 1s;
+  transition: all 1s ease-in-out;
   left: 0;
+  z-index: 1;
 }
 
-.hole.up .cupcake {
+.hole1 .animal {
+  background-image: url("../images/koala.png");
+}
+.hole2 .animal {
+  background-image: url("../images/penguin.png");
+}
+.hole3 .animal {
+  background-image: url("../images/hippo.png");
+}
+.hole4 .animal {
+  background-image: url("../images/giraffe.png");
+}
+.hole5 .animal {
+  background-image: url("../images/elephant.png");
+}
+.hole6 .animal {
+  background-image: url("../images/owl.png");
+}
+.hole7 .animal {
+  background-image: url("../images/zebra.png");
+}
+.hole8 .animal {
+  background-image: url("../images/monkey.png");
+}
+.hole9 .animal {
+  background-image: url("../images/turtle.png");
+}
+
+.hole.up .animal {
   top: 0;
 }
 
 .copyright {
-  color: #fff;
+  color: black;
   margin-top: 30px;
-  font-size: 1.5em;
-}
-
-body {
-  padding-bottom: 0;
-}
-
-footer {
-  background: #8246af;
-  margin-top: 100px;
-  padding: 10px;
-}
-
-footer img {
-  width: 200px;
-  margin: 20px;
+  font-size: 20px;
+  font-weight: normal;
 }

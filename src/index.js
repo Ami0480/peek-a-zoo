@@ -18,7 +18,7 @@ function endGame() {
 
 function popUp() {
   let hole = randomHole(holes);
-  let time = randomTime(300, 1000);
+  let time = randomTime(600, 1200);
   hole.classList.add("up");
   setTimeout(function () {
     hole.classList.remove("up");
