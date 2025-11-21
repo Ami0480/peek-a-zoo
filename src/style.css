@@ -1,13 +1,15 @@
 body {
   padding: 0;
-  margin: 0;
-  background: #cacfd6;
+  margin: 20px;
+  background: #fff0cb;
 }
 
 .container {
   margin: 20px auto;
   font-family: Raleway, sans-serif;
   text-align: center;
+  border: solid 5px #e46950;
+  border-radius: 20px;
 }
 
 .title {
@@ -17,31 +19,32 @@ body {
 }
 
 h1 {
-  color: #008080;
+  color: #ab331b;
   text-align: center;
-  font-size: 45px;
+  font-size: 38px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .score {
-  background: #008080;
+  background: #ab331b;
   color: white;
-  font-size: 45px;
+  font-size: 38px;
   width: 70px;
   border-radius: 20px;
 }
 
 button {
   display: inline-block;
-  font-size: 30px;
-  background: #6a605c;
-  color: white;
+  font-size: 26px;
+  border-radius: 20px;
+  background: white;
+  color: rgb(101, 101, 101);
   font-weight: normal;
-  border: none;
+  border: solid 3px #da9999;
   padding: 10px 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .game {
@@ -79,9 +82,9 @@ button {
   border: none;
   background-image: url("https://assets.codepen.io/5804361/Untitled+design+%2854%29.png");
   background-color: transparent;
-  background-position: bottom center;
+  background-position: center 40%;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 80%;
   position: absolute;
   top: 100%;
   width: 100%;
